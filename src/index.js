@@ -12,8 +12,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <div className='flex  justify-center items-center flex-col w-100 h-screen  text-black-400 font-bold'>
-      <div className='w-80'>
+    <div className='flex  justify-center items-center gap-10 w-100 h-screen  text-slate-800 font-bold font-mono'>
+      <div>
         <Header />
         <Balance />
         <IncomeExpense />
