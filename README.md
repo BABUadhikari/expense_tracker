@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+## Expense Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Expense Tracker application! This project is designed to help users keep track of their income and expenses, providing a clear view of their financial situation.
 
-## Available Scripts
+### Features
 
-In the project directory, you can run:
+- Add new income and expense transactions
+- Delete existing transactions
+- View the balance, total income, and total expenses
+- Real-time updates
+- User-friendly interface
 
-### `npm start`
+### Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:**
+  - React
+  - Tailwind CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+To run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository:**
 
-### `npm run build`
+   ```sh
+   git@github.com:BABUadhikari/expense_tracker.git
+   cd expense-tracker
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install the dependencies:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```sh
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the frontend:**
 
-### `npm run eject`
+   ```sh
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Home Page:**
+   - View your current balance.
+   - See a summary of your income and expenses.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Add Transaction:**
+   - Add a new transaction by specifying the text and amount.
+   - Choose whether it's an income or expense.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Delete Transaction:**
+   - Remove transactions that you no longer want to track.
 
-## Learn More
+### Code Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Frontend:**
+  - `src/components/`: Contains the React components.
+  - `src/context/`: Contains the GlobalContext for state management.
+  - `src/App.js`: Main app component.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Example Transactions
 
-### Code Splitting
+Here is a sample of what the transaction data structure looks like:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```javascript
+const transactions = [
+  { id: 1, text: 'Salary', amount: 5000 },
+  { id: 2, text: 'Groceries', amount: -200 },
+  { id: 3, text: 'Electricity Bill', amount: -150 },
+  { id: 4, text: 'Freelance Work', amount: 800 },
+  { id: 5, text: 'Dining Out', amount: -60 }
+];
+```
 
-### Analyzing the Bundle Size
+### Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you have any questions or suggestions, please feel free to open an issue or contact me.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Thank you for using the Expense Tracker application! Happy tracking!
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This README provides a comprehensive guide to the Expense Tracker project, detailing its features, technologies, installation steps, usage instructions, and more. If you have any specific requirements or additional information you'd like to include, feel free to let me know!
