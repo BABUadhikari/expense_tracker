@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Header() {
   return (
     <>
-      <h1 className='flex text-center text-2xl'> Expense Tracker</h1>
+      <h1 className="flex text-center text-2xl"> Expense Tracker</h1>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;
