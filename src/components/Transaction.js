@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 
 function Transaction() {
-  const { transactions } = useContext(GlobalContext);
+  const { transactions, deleteTransaction } = useContext(GlobalContext);
+
   return (
     <>
       <div className="mt-3 w-80">
@@ -25,7 +26,12 @@ function Transaction() {
                     {transaction.amount < 0 ? "-" : "+"}$
                     {Math.abs(transaction.amount)}
                   </span>
-                  <button className=" px-2 py-1 rounded">X</button>
+                  <button
+                    className=" px-2 py-1 rounded"
+                    onClick={() => deleteTransaction(transaction.id)}
+                  >
+                    X
+                  </button>
                 </li>
               );
             })}
